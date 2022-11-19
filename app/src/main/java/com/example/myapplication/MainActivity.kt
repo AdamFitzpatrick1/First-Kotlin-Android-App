@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             // create dialog box
             val alert = dialogBuilder.create()
             // set title for alert dialog box
-            alert.setTitle("AlertDialogExample")
+            alert.setTitle("Exit")
             // show alert dialog
             alert.show()
         }
