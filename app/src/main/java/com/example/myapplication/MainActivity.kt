@@ -16,8 +16,10 @@ class MainActivity : AppCompatActivity() {
     /**
      * On create
      *
+     * @author Adam Fitzpatrick, 2022
      * @param savedInstanceState
      * @param val
+     * @
      *
      */
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,6 +54,8 @@ class MainActivity : AppCompatActivity() {
                 .setNegativeButton("No", DialogInterface.OnClickListener {
                         dialog, id -> dialog.cancel()
                 })
+
+                // positive button text and action
                 .setPositiveButton("Yes", DialogInterface.OnClickListener {
                         dialog, id -> finish()
                 })
