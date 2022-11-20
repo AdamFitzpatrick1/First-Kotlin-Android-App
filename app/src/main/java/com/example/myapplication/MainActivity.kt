@@ -7,8 +7,9 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.app.AlertDialog
+import android.app.PendingIntent.getActivity
 import android.content.DialogInterface
-
+import kotlin.system.exitProcess
 
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +59,8 @@ class MainActivity : AppCompatActivity() {
                 // positive button text and action
                 .setPositiveButton("Yes", DialogInterface.OnClickListener {
                         dialog, id -> finish()
+                        this@MainActivity.finish()
+                        exitProcess(0)
                 })
 
 
